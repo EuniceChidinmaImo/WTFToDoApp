@@ -1,0 +1,78 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #todoApp {
+    background: linear-gradient(180deg, #BB0000 6.46%, #EAAD11 60.08%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+   #taskInput {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  } 
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .task:hover {
+    background-color: #e0e0e0;
+  }
+
+  .task button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .task button:hover {
+    background-color: #c0392b;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+
+  .editable {
+    display: none;
+  }
+
+  .editable input {
+    width: 70%;
+    padding: 5px;
+    margin-right: 5px;
+  }
+
+  .editable button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
